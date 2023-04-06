@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    {% include 'cdnlines.html' %}
+    <title></title>
+  </head>
+  <style media="screen">
+    h1{
+      text-align:center;
+      text-shadow: 0px 0px 5px blue;
+    }
+  </style>
+  <body>
+      {% include 'navbar.html' %}
+      <marquee direction="right"><font color="red"><h1>Welcome to Narayana Tech House</h1></font></marquee>
+
+     {% block content %}
+     {% endblock %}
+  </body>
+</html>

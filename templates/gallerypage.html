@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    {% block content %}
+    {% load static %}
+    <div class="container bg-secondary">
+        <div class="row">
+            <div class="col-md-4 mt-2 mb-2">
+               <img src="{% static 'images/nth2.jpg' %}" alt="" style="height:100%; width:100%;" class="img-thumbnail">
+            </div>
+            <div class="col-md-4 mt-2 mb-2">
+              <img src="{% static 'images/nth1.jpg' %}" alt="" style="height:100%; width:100%; border-radius:50%; border: solid red 2px;" class="img-thumbnail">
+            </div>
+            <div class="col-md-4 mt-2 mb-2">
+              <img src="{% static 'images/nth3.jpg' %}" alt="" style ="height:100%; width:100%;" class="img-thumbnail">
+           </div>
+       </div>
+       <div class="row">  
+           <div class="col-md-4 mt-2 mb-2">
+              <img src="{% static 'images/nth5.jpg' %}" alt="" style="height:100%; width:100%;" class="img-thumbnail">
+           </div>
+           <div class="col-md-4 mt-2 mb-2">
+             <img src="{% static 'images/nth9.png' %}" alt="" style="height:100%; width:100%; border-radius:50%; border: solid red 2px;" class="img-thumbnail">
+           </div>
+           <div class="col-md-4 mt-2 mb-2">
+             <img src="{% static 'images/nth6.jpg' %}" alt="" style ="height:100%; width:100%;" class="img-thumbnail">
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-4 mt-2 mb-2">
+             <img src="{% static 'images/nth7.jpg' %}" alt="" style="height:100%; width:100%;" class="img-thumbnail">
+          </div>
+          <div class="col-md-4 mt-2 mb-2">
+            <img src="{% static 'images/nth4.jpg' %}" alt="" style="height:100%; width:100%; border-radius:50%; border: solid red 2px;" class="img-thumbnail">
+          </div>
+          <div class="col-md-4 mt-2 mb-2">
+            <img src="{% static 'images/nth8.png' %}" alt="" style ="height:100%; width:100%;" class="img-thumbnail">
+         </div>
+     </div>
+     </div>
+    {% endblock %}
+  </body>
+</html>
